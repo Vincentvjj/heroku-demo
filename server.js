@@ -8,6 +8,7 @@
 
 var express = require('express');
 var bodyParser = require('body-parser');
+var sendgrid = require('sendgrid')(process.env.SENDGRID_USERNAME, process.env.SENDGRID_PASSWORD);
 
 
 //create an express application
