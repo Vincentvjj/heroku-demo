@@ -29,7 +29,6 @@ app.use(function(err, req, res, next) {
 });
 
 app.get('/api/send', function (req, res){
-    do something here
     sendgrid.send({
         to: req.query.to,
         from: 'info343@ischool.uw.edu',
